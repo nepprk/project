@@ -1,0 +1,35 @@
+{% load static %}
+<html>
+<head>
+	<title>Login</title>
+	<link rel="stylesheet" href="{% static 'css/login.css' %}">
+	<link rel="icon" href="{% static 'img/Logo3.png' %}" type="image/gif" sizes="16x16">
+	<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+<meta name="HandheldFriendly" content="true">
+</head>
+<body>
+	<div class="header">
+		<img class="logo" src="{% static 'img/bi.png' %}">
+	</div>
+	<div class="body">
+		<p>Account Login</p>
+		<hr>
+		<div class="login_form">
+			<form action="http://localhost/Project%20WT/script/login.php">
+				<p>Email Address</p>
+				<input type="text" name="Email" required><br>
+				<p>Password</p>
+				<input type="password" name="Pass" required><br>
+				<input type="submit" value="Sign In">
+				<a href="password.html">Forgot Password?</a>
+				<a href="register.html">Create new account</a>
+			</form>
+		</div>
+	</div>
+	<div class="footer">
+    	<p>&copy2020, Ingenious Technology and Research Center</p>
+    </div>
+</body>
+</html>
+

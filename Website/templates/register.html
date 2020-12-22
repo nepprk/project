@@ -1,0 +1,33 @@
+{% load static %}
+<html>
+<head>
+	<title>Stock Market Simulator</title>
+	<link rel="stylesheet" href="{% static 'css/register.css' %}">
+    <link rel="icon" href="{% static 'img/Logo3.png' %}" type="image/gif" sizes="16x16">
+</head>
+<body>
+	<div class="header">
+		<img class="logo" src="{% static '/img/bi.png' %}">
+		<a class="login" href="login.html">Login</a>
+	</div>
+	<div class="wallDiv">
+		<img class="wallpaper" src="{% static '/img/wallpaper.jpg' %}">
+		<p>Stock Market Signup</p>
+		<div class="reg_form">
+			<form action="http://localhost/Project%20WT/script/register.php">
+				<p id="txt">Register Now</p>
+				<p>Complete the form below:</p>
+                <input type="text" name="Mob" placeholder="Mobile Number" required><br>
+				<input type="text" name="Email" placeholder="Email Address" required>
+				<input type="text" name="UserName" placeholder="Username" required><br>
+				<input type="password" name="Password" placeholder="Password" required>
+				<input type="password" name="CnfPassword" placeholder="Confirm Password" required><br>
+				<input type="submit" value="Register">
+			</form>
+		</div>
+	</div>
+    <div class="footer">
+    	<p>&copy2020, Ingenious Technology and Research Center</p>
+    </div>
+</body>
+</html>
